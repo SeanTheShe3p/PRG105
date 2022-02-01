@@ -1,25 +1,65 @@
-#  Recipe for guacamole
-#  link = https://www.theendlessmeal.com/wprm_print/60146
+#  Guacamole Recipe
+#  Link: https://downshiftology.com/wprm_print/33907
+#  servings: 4
 #  Ingredients:
-#  1 cloves roasted garlic
-#  3 ripe avocados
+#  3 Avocados
+#  1/2 small onion
+#  2 Roma Tomatoes
+#  3 Tablespoons chopped cilantro
+#  1 Jalapeno
 #  1 lime
-#  salt to taste
+#  1/2 teaspoon salt
 #
-#  pseudocode
-#  Data:
-#  enter variables for Garlic(gar), Avocados(avo), and lime(Lim)
-#  input number of servings
-#  Processing:
-#  Change variables gar, avo, and lim to be multiplied by servings
-#  convert string to int and format calculated amounts
-#  print recipe, format as string, add string salt to taste, directions
 #
-avo = 3
-gar = 1
-lim = 1
-serv = int(input('how many servings? '))
-avo = format(avo * serv, '.1f')
-gar = format(gar * serv, '.1f')
-lim = format(lim * serv, '.1f')
-print(str('You need ' + avo + ' avocados, ' + gar + ' cloves of garlic, and ' + lim + ' limes plus salt to taste'))
+avo = float(3 / 4)
+oni = float((1 / 2) / 4)
+tom = float(2 / 4)
+cil = float(3 / 4)
+jal = float(1 / 4)
+lim = float(1 / 4)
+sal = float(1 / 2)
+serving = int(input('How many servings? '))
+avo = avo * serving
+oni = oni * serving
+tom = tom * serving
+cil = cil * serving
+jal = jal * serving
+lim = lim * serving
+sal = sal * serving
+avo = float(format(avo, '.1f'))
+oni = float(format(oni, '.1f'))
+tom = float(format(tom, '.1f'))
+cil = float(format(cil, '.1f'))
+jal = float(format(jal, '.1f'))
+lim = float(format(lim, '.1f'))
+sal = float(format(sal, '.1f'))
+print('Guacamole Recipe')
+print('servings: ' + str(serving))
+if avo <= 1:
+    print(' • ' + str(avo) + ' ripe avocado')
+else:
+    print(' • ' + str(avo) + ' ripe avocados')
+if oni <= 1:
+    print(' • ' + str(oni) + ' small diced onion')
+else:
+    print(' • ' + str(oni) + ' small diced onions')
+if tom <= 1:
+    print(' • ' + str(tom) + ' Roma tomato')
+else:
+    print(' • ' + str(tom) + ' roma tomatoes')
+if cil <= 1:
+    print(' • ' + str(cil) + ' tablespoon chopped cilantro')
+else:
+    print(' • ' + str(cil) + ' tablespoons chopped cilantro')
+if jal <= 1:
+    print(' • ' + str(jal) + ' seeded jalapeno')
+else:
+    print(' • ' + str(jal) + ' seeded jalapenos')
+if lim <= 1:
+    print(' • ' + str(lim) + ' lime')
+else:
+    print(' • ' + str(lim) + ' limes')
+if sal <= 1:
+    print(' • ' + str(sal) + ' teaspoon salt')
+else:
+    print(' • ' + str(sal) + ' teaspoon salt')
